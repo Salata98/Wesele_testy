@@ -4,13 +4,13 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "Dodatkowe informacje")
+@Table(name = "Dodatkowe_informacje")
 public class GuestDetails implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_szczegóły")
+    @Column(name = "id_szczegoly")
     private Long id;
 
     @Column(name = "menu")
@@ -19,13 +19,13 @@ public class GuestDetails implements Serializable {
     @Column(name = "nocleg")
     private boolean accommodation;
 
-    @Column(name = "imię_os_tow")
+    @Column(name = "imie_os_tow")
     private String firstNameT;
 
     @Column(name = "nazwisko_os_tow")
     private String lastNameT;
 
-    @Column(name = "obecność")
+    @Column(name = "obecnosc")
     private boolean confirm;
 
     @Column(name = "poprawiny")

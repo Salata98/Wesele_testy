@@ -11,16 +11,16 @@ public class Guest implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_gość")
+    @Column(name = "id_gosc")
     private Long id;
 
-    @Column(name = "imię1")
+    @Column(name = "imie1")
     private String firstName1;
 
     @Column(name = "nazwisko1")
     private String lastName1;
 
-    @Column(name = "imię2")
+    @Column(name = "imie2")
     private String firstName2;
 
     @Column(name = "nazwisko2")
@@ -29,7 +29,7 @@ public class Guest implements Serializable {
     @Column(name = "login", unique = true)
     private String login;
 
-    @Column(name = "hasło")
+    @Column(name = "haslo")
     private String password;
 
     @OneToOne
